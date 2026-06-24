@@ -4,6 +4,10 @@
       <h2>Admin Portal Login</h2>
       <p class="subtitle">Secure Staff Authentication Only</p>
       
+      <div class="mfa-notice">
+        <strong>Security Notice:</strong> All administrative logins require 2-step verification (MFA) via Google Authenticator.
+      </div>
+      
       <form @submit.prevent="handleEmailLogin" class="login-form">
         <div class="form-group">
           <label for="email">Username or Email</label>
@@ -229,5 +233,16 @@ input:focus {
   font-size: 0.875rem;
   margin-top: 1.25rem;
   font-weight: 500;
+}
+
+.mfa-notice {
+  background-color: #eff6ff;
+  border-left: 4px solid #3b82f6;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.825rem;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 </style>
